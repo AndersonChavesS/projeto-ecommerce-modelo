@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de compras</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="main__title">Carrinho de compras</h1>
+
+      <section class="main__products">
+        <table class="products__table">
+          <thead>
+            <tr class="products-table__header">
+              <th class="products-header__cell">Imagem</th>
+
+              <th class="products-header__cell">Produto</th>
+
+              <th class="products-header__cell">Unitário</th>
+
+              <th class="products-header__cell">Total</th>
+
+              <th class="products-header__cell">Quantidade</th>
+
+              <th class="products-header__cell">Remover</th>
+            </tr>
+          </thead>
+          <tbody class="products-table__tbody">          
+          </tbody>
+        </table>
+      </section>
+
+      <section class="main__finish">
+        <div class="finish__total center">
+          <table class="total__table">
+            <tr>
+              <td class="total-table__label">Total Itens:</td>
+              <td class="total-table__value" id="total-quantity"></td>
+            </tr>
+
+            <tr>
+              <td class="total-table__label">Total Preço:</td>
+              <td class="total-table__value" id="total-price"></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="finish__send center">
+          <button class="send__button">Finalizar Compra</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
